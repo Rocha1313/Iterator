@@ -1,6 +1,6 @@
 import java.util.*;
 public class LL<T> implements Iterable<T> {
-    Node<T> head, tail;
+    private Node<T> head, tail;
 
     public void add(T data){
         Node<T> node = new Node<>(data, null);
@@ -20,7 +20,8 @@ public class LL<T> implements Iterable<T> {
         return this.tail;
     }
 
-    public LLIterator<T> iterator(){
+    @Override
+    public Iterator<T> iterator(){
         return new LLIterator<T>(this);
     }
 }
