@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class LL {
+public class LL<T> implements Iterable<T> {
+    Node<T> head;
+
+
 }

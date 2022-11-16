@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class LLIterator {
+import java.util.*;
+
+public class LLIterator<T> implements Iterator<T>{
+    Node<T> current;
 }
